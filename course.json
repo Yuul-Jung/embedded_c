@@ -1,0 +1,219 @@
+{
+  "site_title": "임베디드 C 공통 교과",
+  "site_subtitle": "주소 · 포인터 · 비트 · volatile · 인터럽트 · 계층 분리",
+  "site_description": "MCU가 바뀌어도 그대로 쓰는 임베디드 C 프로그래밍 기법을 정리한 공통 교과입니다. 기초편(A~D)은 주소와 메모리를 보는 시각을 만들고, 기법편은 실무 기법을 우선순위대로 익힙니다. 모든 예제는 PC에서 컴파일·실행해 확인한 결과를 실었습니다.",
+  "course_code": "EMBEDDED C",
+  "version": "v01",
+  "chapters": [
+    {
+      "id": "ch01",
+      "number": 1,
+      "title": "서문 · 이 책의 구성",
+      "subtitle": "대상 독자 → 읽는 법 → 기법 우선순위",
+      "slug": "ch01_preface",
+      "version": "v01",
+      "source": "content/ch01.md",
+      "tags": [
+        "C",
+        "임베디드",
+        "구성"
+      ]
+    },
+    {
+      "id": "ch02",
+      "number": 2,
+      "title": "기초 A · 메모리와 주소",
+      "subtitle": "바이트 → 엔디안 → 정렬 → 주소 공간",
+      "slug": "ch02_memory_address",
+      "version": "v01",
+      "source": "content/ch02.md",
+      "tags": [
+        "메모리",
+        "엔디안",
+        "정렬"
+      ]
+    },
+    {
+      "id": "ch03",
+      "number": 3,
+      "title": "기초 B · 포인터",
+      "subtitle": "주소를 담은 변수 → 산술 → 레지스터 접근",
+      "slug": "ch03_pointer",
+      "version": "v01",
+      "source": "content/ch03.md",
+      "tags": [
+        "포인터",
+        "REG32",
+        "const"
+      ]
+    },
+    {
+      "id": "ch04",
+      "number": 4,
+      "title": "기초 C · 구조체와 레지스터 맵",
+      "subtitle": "멤버 배치 → 패딩 → 레지스터 맵 구조체",
+      "slug": "ch04_struct_layout",
+      "version": "v01",
+      "source": "content/ch04.md",
+      "tags": [
+        "struct",
+        "offsetof",
+        "패딩"
+      ]
+    },
+    {
+      "id": "ch05",
+      "number": 5,
+      "title": "기초 D · 함수 포인터와 콜백",
+      "subtitle": "함수 주소 → 콜백 등록 → 드라이버 인터페이스",
+      "slug": "ch05_function_pointer",
+      "version": "v01",
+      "source": "content/ch05.md",
+      "tags": [
+        "함수 포인터",
+        "콜백",
+        "ops"
+      ]
+    },
+    {
+      "id": "ch06",
+      "number": 6,
+      "title": "기법 1 · 비트 연산",
+      "subtitle": "set·clear·toggle·test → 필드 → 읽기-수정-쓰기",
+      "slug": "ch06_bit_operations",
+      "version": "v01",
+      "source": "content/ch06.md",
+      "tags": [
+        "비트",
+        "마스크",
+        "RMW"
+      ]
+    },
+    {
+      "id": "ch07",
+      "number": 7,
+      "title": "기법 2 · volatile과 레지스터 접근",
+      "subtitle": "최적화 영향 → 읽기·쓰기 횟수 → 접근 코드",
+      "slug": "ch07_volatile",
+      "version": "v01",
+      "source": "content/ch07.md",
+      "tags": [
+        "volatile",
+        "REG32",
+        "RISC-V 어셈블리"
+      ]
+    },
+    {
+      "id": "ch08",
+      "number": 8,
+      "title": "기법 3 · 고정 폭 정수형",
+      "subtitle": "형 크기 → 부호·승격 → 되감김",
+      "slug": "ch08_fixed_width_int",
+      "version": "v01",
+      "source": "content/ch08.md",
+      "tags": [
+        "uint32_t",
+        "정수 승격",
+        "틱"
+      ]
+    },
+    {
+      "id": "ch09",
+      "number": 9,
+      "title": "기법 4 · 폴링과 타임아웃",
+      "subtitle": "무한 대기 방지 → 오류 처리 → 재시도",
+      "slug": "ch09_polling_timeout",
+      "version": "v01",
+      "source": "content/ch09.md",
+      "tags": [
+        "폴링",
+        "타임아웃",
+        "상태 비트"
+      ]
+    },
+    {
+      "id": "ch10",
+      "number": 10,
+      "title": "기법 5 · ISR 작성 규칙",
+      "subtitle": "짧은 ISR → 공유 변수 → 원인 해제",
+      "slug": "ch10_isr_rules",
+      "version": "v01",
+      "source": "content/ch10.md",
+      "tags": [
+        "ISR",
+        "volatile",
+        "플래그"
+      ]
+    },
+    {
+      "id": "ch11",
+      "number": 11,
+      "title": "기법 6 · 초기화 순서",
+      "subtitle": "클록 → 핀 → 주변장치 → 인터럽트",
+      "slug": "ch11_init_order",
+      "version": "v01",
+      "source": "content/ch11.md",
+      "tags": [
+        "초기화",
+        "클록",
+        "핸들러"
+      ]
+    },
+    {
+      "id": "ch12",
+      "number": 12,
+      "title": "기법 7 · 링 버퍼",
+      "subtitle": "head/tail 인덱스 → ISR과 메인 사이 전달",
+      "slug": "ch12_ring_buffer",
+      "version": "v01",
+      "source": "content/ch12.md",
+      "tags": [
+        "링 버퍼",
+        "FIFO",
+        "UART 수신"
+      ]
+    },
+    {
+      "id": "ch13",
+      "number": 13,
+      "title": "기법 8 · 상태 머신",
+      "subtitle": "switch 방식 → 표 방식 → 잘못된 상태 복구",
+      "slug": "ch13_state_machine",
+      "version": "v01",
+      "source": "content/ch13.md",
+      "tags": [
+        "FSM",
+        "디바운스",
+        "함수 포인터"
+      ]
+    },
+    {
+      "id": "ch14",
+      "number": 14,
+      "title": "기법 9 · 논블로킹 시간 처리",
+      "subtitle": "블로킹 대기 → 기한 비교 → 주기 작업",
+      "slug": "ch14_nonblocking_time",
+      "version": "v01",
+      "source": "content/ch14.md",
+      "tags": [
+        "delay",
+        "틱",
+        "주기 작업"
+      ]
+    },
+    {
+      "id": "ch15",
+      "number": 15,
+      "title": "기법 10 · 계층 분리와 HAL",
+      "subtitle": "응용·드라이버·HAL → 구현 교체 → 시험용 구현",
+      "slug": "ch15_layering_hal",
+      "version": "v01",
+      "source": "content/ch15.md",
+      "tags": [
+        "HAL",
+        "계층",
+        "시험"
+      ]
+    }
+  ]
+}
